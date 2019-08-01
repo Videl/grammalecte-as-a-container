@@ -13,5 +13,5 @@ WORKDIR /grammalecte
 RUN wget https://grammalecte.net/grammalecte/zip/Grammalecte-fr-v1.2.1.zip
 RUN unzip Grammalecte-fr-v1.2.1.zip && rm -f Grammalecte-fr-v1.2.1.zip
 
-EXPOSE 9999
-CMD python3 grammalecte-server.py --host 0.0.0.0 --port 9999
+EXPOSE 8080
+CMD python3 grammalecte-server.py --host 0.0.0.0 --port 8080
