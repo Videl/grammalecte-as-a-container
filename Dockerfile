@@ -10,8 +10,9 @@ ENV LC_ALL en_US.UTF-8
 
 RUN mkdir /grammalecte
 WORKDIR /grammalecte
-RUN wget https://grammalecte.net/grammalecte/zip/Grammalecte-fr-v1.2.1.zip
-RUN unzip Grammalecte-fr-v1.2.1.zip && rm -f Grammalecte-fr-v1.2.1.zip
+RUN wget https://grammalecte.net/grammalecte/zip/Grammalecte-fr-v1.3.0.zip
+RUN unzip Grammalecte-fr-v1.3.0.zip && rm -f Grammalecte-fr-v1.3.0.zip
 
 EXPOSE 8080
+
 CMD python3 grammalecte-server.py --host 0.0.0.0 --port 8080
