@@ -10,8 +10,8 @@ ENV LC_ALL en_US.UTF-8
 
 RUN mkdir /grammalecte
 WORKDIR /grammalecte
-RUN wget https://grammalecte.net/grammalecte/zip/Grammalecte-fr-v1.3.0.zip
-RUN unzip Grammalecte-fr-v1.3.0.zip && rm -f Grammalecte-fr-v1.3.0.zip
+RUN wget https://grammalecte.net/grammalecte/zip/Grammalecte-fr-v1.3.2.zip
+RUN unzip Grammalecte-fr-v1.3.2.zip && rm -f Grammalecte-fr-v1.3.2.zip
 
 EXPOSE 8080
 
